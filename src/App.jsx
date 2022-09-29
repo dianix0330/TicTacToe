@@ -1,7 +1,7 @@
 import { GameBoard } from "./components";
 import "./App.css";
 
-const BOARD_SIZE = 6
+const BOARD_SIZE = 3
 
 function App() {
   return (
