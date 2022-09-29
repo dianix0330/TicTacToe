@@ -1,12 +1,27 @@
-import React from 'react'
-import './style.css';
+/**
+ * @param {function} onClick
+ * @param {string} content
+ * @param {int} boxWidth
+ * @param {int} boxHeight
+ * @return {JSX}
+ * This is the box component of board
+ */
+
+import React from "react";
+import "./style.css";
 
 const BoxItem = ({ onClick, content, boxWidth, boxHeight }) => {
   return (
-    <div className={`box--item ${content === 'X' ? 'font-red' : 'font-blue'}`} style={{width: boxWidth, height: boxHeight}}onClick={onClick}>
+    <div
+      className={`box--item ${
+        content === "X" ? "font--color-red" : "font--color-blue"
+      }`}
+      style={{ width: boxWidth, height: boxHeight, fontSize: boxHeight * 0.7 }}
+      onClick={onClick}
+    >
       {content}
     </div>
-  )
-}
+  );
+};
 
 export default BoxItem;

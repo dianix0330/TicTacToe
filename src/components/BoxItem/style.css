@@ -2,15 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;
   cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0.7) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.75) 0px 1px 3px -1px;
+    
+  background-color: white;
   user-select: none;
 }
-.font-red {
+.font--color-red {
   color: red;
 }
-.font-blue {
+.font--color-blue {
   color: blue;
 }
