@@ -1,11 +1,11 @@
 import { GameBoard } from "./components";
 import "./App.css";
 
-const SIZE = 6
+const BOARD_SIZE = 6
 
 function App() {
   return (
-    <GameBoard count={SIZE} />
+    <GameBoard count={BOARD_SIZE} />
   )
 }
 
