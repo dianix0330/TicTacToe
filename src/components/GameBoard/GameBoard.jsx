@@ -6,6 +6,7 @@
 
 import React, { useEffect, useState } from "react";
 import { BoxItem } from "../index";
+import { useSize } from "../../hooks";
 import "./style.css";
 
 const GameBoard = ({ count }) => {
@@ -13,28 +14,19 @@ const GameBoard = ({ count }) => {
   const [gameStatus, setGameStatus] = useState("X"); // The gameStatus state shows value of Game Status ('X' or 'O').
   const [stepCount, setStepCount] = useState(0); // The stepCount state shows count of valid item in boxes.
   const [gameWinner, setWinner] = useState("NOTOVER"); // The gameWinner state shows result of game.
-  const [windowSize, setWindowSize] = useState(getWindowSize()); // The windowSize state shows the current WindowSize and updates it even if it has been changed.
+  const screenSize = useSize();
   const [boxSize, setBoxSize] = useState({ width: 100, height: 100 }); // The boxSize state shows the size of BoxItem.
 
   useEffect(() => {
-    handleWindowResize();
-
-    //Get the current size of Component
-    function handleWindowResize() {
-      const size = getWindowSize();
-      const min =
-        size.innerHeight < size.innerWidth ? size.innerHeight : size.innerWidth; // The min value shows min value between height and width of component.
-      const boxHeight = (min * 0.7) / count;
-      setBoxSize({ width: boxHeight, height: boxHeight });
-      setWindowSize(windowSize);
-    }
-
-    window.addEventListener("resize", handleWindowResize); //Add Resize Event to the component
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize); // When the component is dismounted, remove the event of handleWindowResize.
-    };
-  }, []);
+    // The min value shows min value between height and width of component.
+    const min =
+    screenSize.height < screenSize.width
+        ? screenSize.height
+        : screenSize.width; 
+    if(min === undefined) return;
+    const boxHeight = (min * 0.7) / count;
+    setBoxSize({ width: boxHeight, height: boxHeight });
+  }, [screenSize]);
 
   // Check if the game is over whenever the boxes states has changed.
   useEffect(() => {
@@ -203,11 +195,6 @@ const GameBoard = ({ count }) => {
 
 function StatusShow({ content }) {
   return <h1 className="text--status-red">{content}</h1>;
-}
-
-function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
 }
 
 export default GameBoard;
