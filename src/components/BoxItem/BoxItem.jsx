@@ -8,7 +8,6 @@
  */
 
 import React, { memo } from "react";
-import { useEffect } from "react";
 import "./style.css";
 
 const BoxItem = memo(({ onClick, content, boxWidth, boxHeight }) => {

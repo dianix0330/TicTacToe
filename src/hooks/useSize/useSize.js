@@ -17,7 +17,7 @@ export default function useSize() {
     } else if (innerWidth >= 1200) {
       size = "lg";
     }
-    
+
     let orientation = "none";
     if (innerWidth > innerHeight * ORIENTATION_MIN_BREAKPOINT) {
       orientation = "landscape";
@@ -36,4 +36,4 @@ export default function useSize() {
   }, []);
 
   return screenSize;
-};
+}

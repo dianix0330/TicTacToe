@@ -1,1 +1,1 @@
-export { default as useSize } from './useSize/useSize'
+export { default as useSize } from "./useSize/useSize";
