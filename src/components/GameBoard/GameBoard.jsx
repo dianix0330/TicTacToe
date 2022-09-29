@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 import { BoxItem } from "../index";
 import { useSize } from "../../hooks";
 import "./style.css";
+import { useCallback } from "react";
 
 const GameBoard = ({ count }) => {
   const [boxes, setBoxes] = useState(Array(count * count).fill("")); // The boxes state contains array of values .
@@ -20,10 +21,10 @@ const GameBoard = ({ count }) => {
   useEffect(() => {
     // The min value shows min value between height and width of component.
     const min =
-    screenSize.height < screenSize.width
+      screenSize.height < screenSize.width
         ? screenSize.height
-        : screenSize.width; 
-    if(min === undefined) return;
+        : screenSize.width;
+    if (min === undefined) return;
     const boxHeight = (min * 0.7) / count;
     setBoxSize({ width: boxHeight, height: boxHeight });
   }, [screenSize]);
@@ -47,16 +48,19 @@ const GameBoard = ({ count }) => {
   // Returns correct index of boxes from columnIndex and rowIndex.
   const getBoxIndex = (columnIndex, rowIndex) => columnIndex * count + rowIndex;
 
-  function handleBoxClick(columnIndex, rowIndex) {
-    const result = [...boxes];
-    const index = getBoxIndex(columnIndex, rowIndex);
-    if (result[index]) return;
-    result[index] = gameStatus;
+  const handleBoxClick = useCallback(
+    (columnIndex, rowIndex) => () => {
+      const result = [...boxes];
+      const index = getBoxIndex(columnIndex, rowIndex);
+      if (result[index]) return;
+      result[index] = gameStatus;
 
-    setBoxes(result); // Set boxes state to modified result.
-    setStepCount((prev) => prev + 1); // Increase the count of Step.
-    setGameStatus(gameStatus === "X" ? "O" : "X"); // Set the game status value
-  }
+      setBoxes(result); // Set boxes state to modified result.
+      setStepCount((prev) => prev + 1); // Increase the count of Step.
+      setGameStatus(gameStatus === "X" ? "O" : "X"); // Set the game status value
+    },
+    [gameStatus]
+  );
 
   // Get boxes value by using getBoxIndex function with columnIndex and rowIndex params.
   const getBoxValueBy = (columnIndex, rowIndex) =>
@@ -180,7 +184,7 @@ const GameBoard = ({ count }) => {
                 .map((_, rowIndex) => (
                   <BoxItem
                     key={columnIndex + ":" + rowIndex}
-                    onClick={() => handleBoxClick(columnIndex, rowIndex)}
+                    onClick={handleBoxClick(columnIndex, rowIndex)}
                     content={getBoxValueBy(columnIndex, rowIndex)}
                     boxWidth={boxSize.width}
                     boxHeight={boxSize.height}

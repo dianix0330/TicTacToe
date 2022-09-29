@@ -7,21 +7,26 @@
  * This is the box component of board
  */
 
-import React from "react";
+import React, { memo } from "react";
+import { useEffect } from "react";
 import "./style.css";
 
-const BoxItem = ({ onClick, content, boxWidth, boxHeight }) => {
+const BoxItem = memo(({ onClick, content, boxWidth, boxHeight }) => {
   return (
     <div
       className={`box--item ${
         content === "X" ? "font--color-red" : "font--color-blue"
       }`}
-      style={{ width: boxWidth, height: boxHeight, fontSize: boxHeight * 0.7 }}
+      style={{
+        width: boxWidth,
+        height: boxHeight,
+        fontSize: boxHeight * 0.7,
+      }}
       onClick={onClick}
     >
       {content}
     </div>
   );
-};
+});
 
 export default BoxItem;
