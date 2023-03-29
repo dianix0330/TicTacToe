@@ -1,7 +1,5 @@
 # Tic-Tac-Toe
-https://prod.liveshare.vsengsaas.visualstudio.com/join?E6AB6DBB858F9162177D74EF662DCA77F95E
 Let's build a Tic-Tac-Toe game! 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?E6AB6DBB858F9162177D74EF662DCA77F95E
 - Rules and requirements:
   1. Tic-Tac-Toe is a board game between two players (X and O) on a 3x3 grid.
   2. Players click on a tile to claim it, placing an indicator 'X' or 'O' to denote which player selected that spot.
@@ -10,7 +8,7 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?E6AB6DBB858F9162177D74EF6
   5. When either player wins, the game should indicate who won via a simple alert. If it was a tie, the alert should indicate that.
   6. Acknowledging the alert should reset the board for a new game.
   7. We'll likely have users playing on mobile, so please try to make it playable on any screen size.
-
+https://prod.liveshare.vsengsaas.visualstudio.com/join?C171BC310620C8A629E815E36F9DCE6DBA46
 - Some things to keep in mind
 1.  Please write your code with the idea that someone else will need to maintain it later on. Your code should be easy to understand and easy to explain to the team.
 2. There are no design specs included, but CSS is part of daily front-end life! Feel free to get creative once the initial requirements have been met, solid CSS is definitely a plus.
