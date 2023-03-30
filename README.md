@@ -9,7 +9,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmViMTk4ZWQtOTc1Ny00OWVkL
   5. When either player wins, the game should indicate who won via a simple alert. If it was a tie, the alert should indicate that.
   6. Acknowledging the alert should reset the board for a new game.
   7. We'll likely have users playing on mobile, so please try to make it playable on any screen size.
-https://prod.liveshare.vsengsaas.visualstudio.com/join?C171BC310620C8A629E815E36F9DCE6DBA46
+https://prod.liveshare.vsengsaas.visualstudio.com/join?4E588CD03E4DA30662972ED708ADCE5196FB
 - Some things to keep in mind
 1.  Please write your code with the idea that someone else will need to maintain it later on. Your code should be easy to understand and easy to explain to the team.
 2. There are no design specs included, but CSS is part of daily front-end life! Feel free to get creative once the initial requirements have been met, solid CSS is definitely a plus.
