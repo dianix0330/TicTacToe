@@ -16,5 +16,3 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?DD18643B095E2E7A00603459F
 3. Needs change over time. While reviewing this code with the hiring manager, you may be asked on the call to expand the grid to 4x4 or 5x5, or perhaps support a third player. Make sure your solution is generic enough to be reused and extended.
 
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4LWFjZGMtNDczOTJhM2IzYzMx%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
-
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmI1YzAxZTMtYTU1My00MDU1LWE3NzQtM2Y5ODY0OWJjNDRm%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%224a6d9974-aeae-470c-8bf6-727b4b5cfe92%22%7d
