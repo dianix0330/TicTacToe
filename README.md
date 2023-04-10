@@ -1,8 +1,8 @@
 # Tic-Tac-Toe
 Let's build a Tic-Tac-Toe game! 
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4LWFjZGMtNDczOTJhM2IzYzMx%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
 
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_Njg2ZjYyZGUtNmFmYS00NzAxLTlhNzQtNzI4NzI3ODI5M2Jj%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
+
 - Rules and requirements:
   1. Tic-Tac-Toe is a board game between two players (X and O) on a 3x3 grid.
   2. Players click on a tile to claim it, placing an indicator 'X' or 'O' to denote which player selected that spot.
