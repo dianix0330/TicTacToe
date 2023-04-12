@@ -12,7 +12,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4L
   6. Acknowledging the alert should reset the board for a new game.
   7. We'll likely have users playing on mobile, so please try to make it playable on any screen size.
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?172A330114F75F1B81A169D46F308F4D163F
+https://prod.liveshare.vsengsaas.visualstudio.com/join?EDC53BE508B311AD156D9863BAD7F4DE9F46
 
 - Some things to keep in mind
 1.  Please write your code with the idea that someone else will need to maintain it later on. Your code should be easy to understand and easy to explain to the team.
