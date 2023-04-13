@@ -4,20 +4,32 @@ https://ui.enterpriseplatformshub-dev.aws.gwl.com/common-controls-ui/index.html#
 ```
 [
     {
-        "domain": "confluence.retirementpartner.com",
-        "expirationDate": 1710723686.917924,
+        "domain": "jira.retirementpartner.com",
         "hostOnly": true,
         "httpOnly": false,
-        "name": "confluence.browse.space.cookie",
+        "name": "atlassian.xsrf.token",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "B470-KZ63-IOS3-IMR4_6eb31892be3b2c7684a7586b3585c64221735838_lin"
+    },
+    {
+        "domain": "jira.retirementpartner.com",
+        "expirationDate": 1682638280.372596,
+        "hostOnly": true,
+        "httpOnly": true,
+        "name": "seraph.rememberme.cookie",
         "path": "/",
         "sameSite": null,
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "space-blogposts"
+        "value": "113734%3A66f5f8dd008729c925007961ce84631cbb6c4846"
     },
     {
-        "domain": "confluence.retirementpartner.com",
+        "domain": "jira.retirementpartner.com",
         "hostOnly": true,
         "httpOnly": true,
         "name": "JSESSIONID",
@@ -26,33 +38,7 @@ https://ui.enterpriseplatformshub-dev.aws.gwl.com/common-controls-ui/index.html#
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "AE668DE21CA13E9E23B7B406FDECD65C"
-    },
-    {
-        "domain": "confluence.retirementpartner.com",
-        "expirationDate": 1682033403,
-        "hostOnly": true,
-        "httpOnly": false,
-        "name": "mywork.tab.tasks",
-        "path": "/",
-        "sameSite": null,
-        "secure": false,
-        "session": false,
-        "storeId": null,
-        "value": "false"
-    },
-    {
-        "domain": "confluence.retirementpartner.com",
-        "expirationDate": 1682638165.336365,
-        "hostOnly": true,
-        "httpOnly": true,
-        "name": "seraph.confluence",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "227018154%3A3a2db1893fb7ba53c48cebb6d6056d84d685e12d"
+        "value": "428ABE647724C3B0662C09FC87E11A99"
     }
 ]
 ```
