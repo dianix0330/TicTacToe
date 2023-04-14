@@ -1,8 +1,6 @@
 
 https://ui.enterpriseplatformshub-dev.aws.gwl.com/common-controls-ui/index.html#/components/datagrid
 
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4LWFjZGMtNDczOTJhM2IzYzMx%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
-
 ```
 [
     {
@@ -28,23 +26,11 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4L
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "cd69336e478a6dba06d7b1398486b5c9"
+        "value": "faec1fa21267592d60a8feaf7434ff3b"
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "hostOnly": true,
-        "httpOnly": false,
-        "name": "event_filter",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "all"
-    },
-    {
-        "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1681480558.113107,
+        "expirationDate": 1682716801.935299,
         "hostOnly": true,
         "httpOnly": true,
         "name": "known_sign_in",
@@ -53,11 +39,11 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4L
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "cFBQYWxZU3pmcUVjcE55ZjhJTm0wMm9OSXc3MUs3UEFTQ2VTYmpMWUdiWm5WTElsMERhQnU3QnhaT3l0Y2JEVEpVZm1VTzlTNXJYdzBkb3E2d0JtdVh2UUJnTFdjT3BzMjVOY25Ba1NnMEVYaUVPNDZUemxlOUVaMGhFZlBYL2ctLXhGM1d3Unl0SjJvcmdxRjY0dmlHN1E9PQ%3D%3D--32b38f463d37469a947c101444339ab9fd0bbb56"
+        "value": "OVpaS3dab3BEeWZuNEFHeWNRdnFCSDlDZDNvTzAwWDVxL0J4SnQ3RG5NQXhTWTk5VkViV2dxdWI3bEVRUlduVk5pRzd4YkJmTUMwZEpQL0lhOWZpMlZtNys5SnlnRjd3eTUrUHR5SGIzOEdvR2RwT3l5RGpoTFJjNDJHVmcrWVktLVRlUGlzbFdUSWwwV2d3WGJqeFovVXc9PQ%3D%3D--07434f11107de1b7d70ede3a3d3e206b5744a4e7"
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1716023515.532805,
+        "expirationDate": 1716067202.912194,
         "hostOnly": true,
         "httpOnly": false,
         "name": "sidebar_collapsed",
