@@ -55,7 +55,7 @@ https://ui.enterpriseplatformshub-dev.aws.gwl.com/common-controls-ui/index.html#
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1715999398.908399,
+        "expirationDate": 1716023515.532805,
         "hostOnly": true,
         "httpOnly": false,
         "name": "sidebar_collapsed",
