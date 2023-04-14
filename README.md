@@ -4,41 +4,80 @@ https://ui.enterpriseplatformshub-dev.aws.gwl.com/common-controls-ui/index.html#
 ```
 [
     {
-        "domain": "jira.retirementpartner.com",
+        "domain": "gitlab.retirementpartner.com",
+        "expirationDate": 1711483957,
         "hostOnly": true,
         "httpOnly": false,
-        "name": "atlassian.xsrf.token",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "B470-KZ63-IOS3-IMR4_6eb31892be3b2c7684a7586b3585c64221735838_lin"
-    },
-    {
-        "domain": "jira.retirementpartner.com",
-        "expirationDate": 1682638280.372596,
-        "hostOnly": true,
-        "httpOnly": true,
-        "name": "seraph.rememberme.cookie",
+        "name": "hide_no_ssh_message",
         "path": "/",
         "sameSite": null,
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "113734%3A66f5f8dd008729c925007961ce84631cbb6c4846"
+        "value": "false"
     },
     {
-        "domain": "jira.retirementpartner.com",
+        "domain": "gitlab.retirementpartner.com",
         "hostOnly": true,
         "httpOnly": true,
-        "name": "JSESSIONID",
+        "name": "_gitlab_session",
         "path": "/",
-        "sameSite": null,
+        "sameSite": "no_restriction",
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "428ABE647724C3B0662C09FC87E11A99"
+        "value": "cd69336e478a6dba06d7b1398486b5c9"
+    },
+    {
+        "domain": "gitlab.retirementpartner.com",
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "event_filter",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "all"
+    },
+    {
+        "domain": "gitlab.retirementpartner.com",
+        "expirationDate": 1681480558.113107,
+        "hostOnly": true,
+        "httpOnly": true,
+        "name": "known_sign_in",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "cFBQYWxZU3pmcUVjcE55ZjhJTm0wMm9OSXc3MUs3UEFTQ2VTYmpMWUdiWm5WTElsMERhQnU3QnhaT3l0Y2JEVEpVZm1VTzlTNXJYdzBkb3E2d0JtdVh2UUJnTFdjT3BzMjVOY25Ba1NnMEVYaUVPNDZUemxlOUVaMGhFZlBYL2ctLXhGM1d3Unl0SjJvcmdxRjY0dmlHN1E9PQ%3D%3D--32b38f463d37469a947c101444339ab9fd0bbb56"
+    },
+    {
+        "domain": "gitlab.retirementpartner.com",
+        "expirationDate": 1715999398.908399,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "sidebar_collapsed",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "false"
+    },
+    {
+        "domain": "gitlab.retirementpartner.com",
+        "expirationDate": 1714507476.085877,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "visitor_id",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "058227ba-2199-4b71-8ab1-964a13c410a4"
     }
 ]
 ```
