@@ -32,6 +32,18 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg1MjBiNWYtYWY5MC00MDc2L
     },
     {
         "domain": "gitlab.retirementpartner.com",
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "event_filter",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "all"
+    },
+    {
+        "domain": "gitlab.retirementpartner.com",
         "expirationDate": 1682716801.935299,
         "hostOnly": true,
         "httpOnly": true,
@@ -45,7 +57,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg1MjBiNWYtYWY5MC00MDc2L
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1716251792.43955,
+        "expirationDate": 1716281418.041291,
         "hostOnly": true,
         "httpOnly": false,
         "name": "sidebar_collapsed",
