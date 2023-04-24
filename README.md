@@ -47,7 +47,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg1MjBiNWYtYWY5MC00MDc2L
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1716858144.631621,
+        "expirationDate": 1716886639.271529,
         "hostOnly": true,
         "httpOnly": false,
         "name": "sidebar_collapsed",
