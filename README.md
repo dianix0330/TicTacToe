@@ -21,20 +21,31 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg1MjBiNWYtYWY5MC00MDc2L
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1682333653.85905,
         "hostOnly": true,
         "httpOnly": true,
         "name": "_gitlab_session",
         "path": "/",
         "sameSite": "no_restriction",
         "secure": true,
-        "session": false,
+        "session": true,
         "storeId": null,
-        "value": "e2826b15bad4e9a4273f8bb08626a0e0"
+        "value": "c514140a59062c601d5a1c4b7f61ead1"
     },
     {
         "domain": "gitlab.retirementpartner.com",
-        "expirationDate": 1682716801.935299,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "event_filter",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "all"
+    },
+    {
+        "domain": "gitlab.retirementpartner.com",
+        "expirationDate": 1683536569.00954,
         "hostOnly": true,
         "httpOnly": true,
         "name": "known_sign_in",
@@ -43,7 +54,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg1MjBiNWYtYWY5MC00MDc2L
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "OVpaS3dab3BEeWZuNEFHeWNRdnFCSDlDZDNvTzAwWDVxL0J4SnQ3RG5NQXhTWTk5VkViV2dxdWI3bEVRUlduVk5pRzd4YkJmTUMwZEpQL0lhOWZpMlZtNys5SnlnRjd3eTUrUHR5SGIzOEdvR2RwT3l5RGpoTFJjNDJHVmcrWVktLVRlUGlzbFdUSWwwV2d3WGJqeFovVXc9PQ%3D%3D--07434f11107de1b7d70ede3a3d3e206b5744a4e7"
+        "value": "cHJSdUFsL25hSXFpM2lMVUE5cFpYQ3BOWTJpeDlnNWtSZ1VSRVM0WU1rUmhsN3FKbFhMYUZCVjdxUnNJUDJRaHpkekpOZ3hNdFBVcEFIME5RamgyVC9nRXR3MkZVbGpHVW5mVHhTcy81ZkVpSkRkUXVXcklwYUxQWXErSFJaOHgtLSt0VFpRR2xmNHB3bW00Rzk3dlk5cVE9PQ%3D%3D--7817ce178204c0f9c308bb1c5bd0183a66b3c0a6"
     },
     {
         "domain": "gitlab.retirementpartner.com",
