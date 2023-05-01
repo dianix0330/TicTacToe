@@ -7,19 +7,20 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4L
 ```
 [
     {
-        "domain": "jira.retirementpartner.com",
+        "domain": "confluence.retirementpartner.com",
+        "expirationDate": 1710723686.917924,
         "hostOnly": true,
         "httpOnly": false,
-        "name": "atlassian.xsrf.token",
+        "name": "confluence.browse.space.cookie",
         "path": "/",
-        "sameSite": "no_restriction",
+        "sameSite": null,
         "secure": true,
-        "session": true,
+        "session": false,
         "storeId": null,
-        "value": "B470-KZ63-IOS3-IMR4_7ff23fe5405c5e886b259eec554587ea82183024_lin"
+        "value": "space-blogposts"
     },
     {
-        "domain": "jira.retirementpartner.com",
+        "domain": "confluence.retirementpartner.com",
         "hostOnly": true,
         "httpOnly": true,
         "name": "JSESSIONID",
@@ -28,7 +29,20 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4L
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "2179C582A32DAEA019AFFDF6AAB62ACD"
+        "value": "89751871BF3ED91F64ED457C58CD93FA"
+    },
+    {
+        "domain": "confluence.retirementpartner.com",
+        "expirationDate": 1683541870,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "mywork.tab.tasks",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "false"
     }
 ]
 ```
