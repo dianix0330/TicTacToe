@@ -1,38 +1,114 @@
-https://prod.liveshare.vsengsaas.visualstudio.com/join?4A62944B3ABF0D3B204A20888C034C362467
+```
+/**
+ * Date: 04/25/2022
+ *
+ * The source code contained in this listing is proprietary to
+ * Great-West Financial
+ *
+ * Unauthorized copying, adaptation, distribution,
+ * use, or display is strictly prohibited.
+ * This software is Copyright 2022 Great-West Financial
+ */
+/**
+ * @author Jacob George
+ */
 
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4LWFjZGMtNDczOTJhM2IzYzMx%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
+import { createApi } from "@reduxjs/toolkit/query/react";
+import { ServiceApi } from "common-ts-types";
+import { logger, appProperties, serviceBuilder } from "common-react-utils";
+import { auth } from "../../auth/AuthProvider";
 
+export interface GroupAccount {
+  gaId?: string;
+  planName?: string;
+  description?: string;
+  status?: string;
+}
+
+type GroupAccountResponse = { groupAccounts: GroupAccount[] };
+
+enum TAGS {
+  GroupAccounts = "GroupAccounts",
+}
+
+const service: ServiceApi = serviceBuilder.build("groupAccountsApi", {
+  baseUrl: appProperties.getProperty("SERVICE_BASE_URL") as string,
+});
+const getList = (result) => {
+  return result ? result.groupAccounts : undefined;
+};
+
+export const groupAccountApi = createApi({
+  reducerPath: "groupAccountApi",
+  baseQuery: auth.getBaseQuery(true),
+  tagTypes: [TAGS.GroupAccounts],
+  endpoints: (build) => ({
+    getGroupAccounts: build.query<GroupAccountResponse, void>({
+      query: () => {
+        const api = service.methods.get();
+        return { url: api.url, method: api.method };
+      },
+      providesTags: (result) => {
+        const list = getList(result);
+        return list
+          ? [
+              ...list.map(({ id }) => ({
+                type: TAGS.GroupAccounts as const,
+                id,
+              })),
+              { type: TAGS.GroupAccounts, id: "LIST" },
+            ]
+          : [{ type: TAGS.GroupAccounts, id: "LIST" }];
+      },
+    }),
+    addGroupAccount: build.mutation<GroupAccount, Partial<GroupAccount>>({
+      query: (body) => {
+        logger.debug("addGroupAccount:", body);
+        const api = service.methods.post();
+        return { url: api.url, method: api.method, body };
+      },
+      invalidatesTags: [{ type: TAGS.GroupAccounts, id: "LIST" }],
+    }),
+    getGroupAccount: build.query<GroupAccount, string>({
+      query: () => {
+        const api = service.methods.get();
+        return { url: api.url, method: api.method };
+      },
+      providesTags: (result, error, id) => [{ type: TAGS.GroupAccounts, id }],
+    }),
+    updateGroupAccount: build.mutation<
+      void,
+      Pick<GroupAccount, "gaId"> & Partial<GroupAccount>
+    >({
+      query: ({ gaId, ...patch }) => {
+        const api = service.methods.put();
+        return { url: api.url, method: api.method, body: patch };
+      },
+      invalidatesTags: (result, error, { gaId }) => [
+        { type: TAGS.GroupAccounts, gaId },
+      ],
+    }),
+    deleteGroupAccount: build.mutation<
+      { success: boolean; id: number },
+      number
+    >({
+      query: (id) => {
+        const api = service.methods.delete();
+        return { url: api.url, method: api.method };
+      },
+      invalidatesTags: (result, error, id) => [
+        { type: TAGS.GroupAccounts, id },
+      ],
+    }),
+  }),
+});
+
+export const {
+  useGetGroupAccountsQuery,
+  useGetGroupAccountQuery,
+  useAddGroupAccountMutation,
+  useUpdateGroupAccountMutation,
+  useDeleteGroupAccountMutation,
+} = groupAccountApi;
 
 ```
-[
-    {
-        "domain": "jira.retirementpartner.com",
-        "hostOnly": true,
-        "httpOnly": false,
-        "name": "atlassian.xsrf.token",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "B470-KZ63-IOS3-IMR4_3a5c881504af3fcfadd8a609af70468986fa5b5e_lin"
-    },
-    {
-        "domain": "jira.retirementpartner.com",
-        "hostOnly": true,
-        "httpOnly": true,
-        "name": "JSESSIONID",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "D9585891F2D1267E163207C9C3D0E495"
-    }
-]
-```
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4LWFjZGMtNDczOTJhM2IzYzMx%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
-
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTYzYWNiZDgtNmNmNi00OThiLTljOTUtZTBkNzNiNjBlMTRh%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
-
-https://prod.liveshare.vsengsaas.visualstudio.com/join?FC5A6FA4365EE04DDE62DE68BF3C15F117A1
