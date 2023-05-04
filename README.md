@@ -1,28 +1,5 @@
-```
-[
-    {
-        "domain": "jira.retirementpartner.com",
-        "hostOnly": true,
-        "httpOnly": false,
-        "name": "atlassian.xsrf.token",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "B470-KZ63-IOS3-IMR4_501b25597f2f896be57ec8f7c781c9cdbe62a63d_lin"
-    },
-    {
-        "domain": "jira.retirementpartner.com",
-        "hostOnly": true,
-        "httpOnly": true,
-        "name": "JSESSIONID",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "36EDA6DFBD48B4181EE0A60BE0DC57DB"
-    }
-]
-```
+https://prod.liveshare.vsengsaas.visualstudio.com/join?FC5A6FA4365EE04DDE62DE68BF3C15F117A1
+
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjNDJhNTYtMGE3ZS00ZmU4LWFjZGMtNDczOTJhM2IzYzMx%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
+
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWMyNzUxYTgtZjMwYS00Y2IwLTgyODYtMTI5NTkxZDM2Zjc0%40thread.v2/0?context=%7b%22Tid%22%3a%22d344fc8a-8286-4945-9a21-49aed506d485%22%2c%22Oid%22%3a%221dda0158-f4e9-4c0a-a950-ee6cbe82c585%22%7d
